@@ -3,3 +3,149 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header.navbar-container {
+  width: 100%;
+  padding: 8px 64px;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: #e0e4e9; */
+}
+header.navbar-container .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header.navbar-container .logo img {
+  width: 40px;
+}
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+
+  display: flex;
+  gap: 1rem 2rem;
+  justify-content: center;
+}
+header.navbar-container .nav-list li {
+  list-style: none;
+}
+header.navbar-container .nav-list li a {
+  padding: 8px 16px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #353649;
+
+  transition: all 0.2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a {
+  background-color: #353649;
+  color: white;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 4rem;
+
+  display: flex;
+  align-items: center;
+}
+main .title {
+  font-size: 3rem;
+}
+main p {
+  max-width: 60ch;
+}
+
+main button {
+  text-decoration: none;
+
+  padding: 16px 32px;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  margin-block-start: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  background-color: #353649;
+  color: white;
+
+  transition: all 0.15s ease-in;
+}
+
+main button:hover {
+  border: 3px solid #353649;
+  background-color: whitesmoke;
+  color: #353649;
+}
+aside .profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+aside img {
+  width: 400px;
+  border-radius: 999px;
+}
+
+footer .social-media {
+  width: 100%;
+  display: flex;
+}
+footer .social-media ul {
+  padding: 16px 32px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: auto;
+  background-color: #2d3e50;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .social-media li {
+  list-style-type: none;
+}
+footer .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+footer .social-media li a:hover {
+  color: #89b0d9;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    order: -1;
+  }
+  aside .profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+  aside img {
+    width: 200px;
+  }
+}
