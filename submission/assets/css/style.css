@@ -17,8 +17,6 @@ header.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* background-color: #e0e4e9; */
 }
 header.navbar-container .logo {
   display: flex;
@@ -45,13 +43,13 @@ header.navbar-container .nav-list li a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  color: #353649;
+  color: #14213d;
 
   transition: all 0.2s ease-in-out;
 }
 header.navbar-container .nav-list li:hover a {
-  background-color: #353649;
-  color: white;
+  background-color: #14213d;
+  color: yellow;
 }
 
 main {
@@ -82,7 +80,7 @@ main button {
   font-weight: 700;
   cursor: pointer;
 
-  background-color: #353649;
+  background-color: #14213d;
   color: white;
 
   transition: all 0.15s ease-in;
@@ -90,7 +88,7 @@ main button {
 
 main button:hover {
   border: 3px solid #353649;
-  background-color: whitesmoke;
+  background-color: yellow;
   color: #353649;
 }
 aside .profile-card {
@@ -112,7 +110,7 @@ footer .social-media ul {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin: auto;
-  background-color: #2d3e50;
+  background-color: #14213d;
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -129,7 +127,7 @@ footer .social-media li a {
   transition: all 0.1s ease-in-out;
 }
 footer .social-media li a:hover {
-  color: #89b0d9;
+  color: yellow;
 }
 
 @media screen and (max-width: 768px) {
